@@ -2,8 +2,7 @@
 
 ################################################################################
 #
-#  getmyip.sh to reach out to local gateway (for this frist script a Cisco E2000
-#  @192.168.1.1) and get the address set for dhcp.  
+#  getmyip.sh to reach out to the network get my current IP address.  
 #
 #  getmyips.sh will then take that IP and check it against the last ip and if it
 #  has changed, update the IP file and send that information upstream.
