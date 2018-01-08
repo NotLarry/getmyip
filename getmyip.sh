@@ -26,7 +26,7 @@ if [ "$public_ip" != "$last_public_ip" ]; then
 
     # this would be nice if I could do it #curl $curl_cmd                                               # Slack new IP
     # but this works for now
-    curl -X POST --data-urlencode "payload={\"challen\":\"$channel\", \"username\": \"$username\", \"text\": \"r00tw4rz.org has a new IP @ $public_ip.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/$hook
+    curl -X POST --data-urlencode "payload={\"channel\":\"$channel\", \"username\": \"$username\", \"text\": \"r00tw4rz.org has a new IP @ $public_ip.\", \"icon_emoji\": \":ghost:\"}" https://hooks.slack.com/services/$hook
 
 fi
 
